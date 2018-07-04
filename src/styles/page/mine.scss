@@ -1,0 +1,57 @@
+.mine{
+    .top{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(99, 236, 145);
+        color: #fffdfd;
+        height:3rem;
+        .circle{
+            font-size:1.8rem;
+        }
+    }
+    .bottom{
+        .item{
+            &:first-child{
+                margin-top: 30px;
+            }
+            position: relative;
+            display: flex;
+            align-items: center;
+            height: .6rem;
+            background-color: #fffdfd;
+            margin: 2px 0;
+            padding-left: .8rem;
+            .prev-icon{
+                position: absolute;
+                left: 20px;
+                color: rgb(119, 233, 99);
+                font-size: larger;
+            }
+            .back-icon{
+                position: absolute;
+                right: 10px;
+                font-size: larger;
+                color: rgb(119, 233, 99);
+            }
+        }
+        .btn{
+            background: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            padding: 0;
+            .link{
+                width: 4rem;
+                height: 0.6rem;
+                background: #ec534e;
+                color: #fffdfd;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 5px;
+            }
+        }
+    }
+}

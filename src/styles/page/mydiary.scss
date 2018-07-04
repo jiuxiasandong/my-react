@@ -1,0 +1,102 @@
+.myList{
+    display: flex;
+    padding: 10px 0;
+    position: relative;
+    font-size: small;
+    .line{
+        position: absolute;
+        top: 0;
+        left: 1.3rem;
+        width: 0.02rem;
+        height: 100%;
+        background: #ddd;
+        z-index: 1;
+    }
+    .left{
+        width: 26%;
+        position: relative;
+        $pl:20px;
+        .top{
+            display: flex;
+            align-items: center;
+            padding-left: $pl;
+            span:first-child{
+                font-weight: bold;
+                font-size: large;
+            }
+        }
+        .bottom{
+            display: flex;
+            padding-left: $pl;
+            align-items: center;
+            margin-top: 5px;
+        }
+        .trigon {
+            position: absolute;
+            top: 0.22rem;
+            right: 0;
+            width: 0;
+            height: 0;
+            border: 0.15rem solid #fff;
+            border-color: transparent #fff transparent transparent;
+        }
+        .circle{
+            position: absolute;
+            top: 0.26rem;
+            right: 0.24rem;
+            width: 0.2rem;
+            height: 0.2rem;
+            border-radius: 50%;
+            background-color: #eee;
+            border: 0.01rem solid #ddd;
+            z-index: 2;
+        }
+    }
+    .right{
+        width: 71.5%;
+        height: 1.2rem;
+        position: relative;
+        border-radius: 6px;
+        background-color: #fff;
+        .tex{
+            padding: 10px 20px;
+            font-size: small;
+            height: 0.62rem;
+            overflow: hidden;
+            word-wrap:break-word; 
+            color: #000;
+        }
+        .location{
+            position: absolute;
+            bottom: 0;
+            padding: 0 0.2rem;
+            color: #aaa;
+            font-size: xx-small;
+        }
+    }
+    .delete{
+        position: absolute;
+        right: -0.8rem;
+        top: 0.1rem;
+        width: 0.8rem;
+        height: 1.16rem;
+        text-align: center;
+        line-height: 1.16rem;
+        color: #fff;
+        font-size: 0.35rem;
+        background-color: #f14b4b;
+        display: none;
+    }
+}
+
+@keyframes small-to-big{
+    0%{
+        transform: scale(.8);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.allList{
+    animation: small-to-big .8s 0s both ease;
+}

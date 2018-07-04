@@ -1,0 +1,44 @@
+.detailList{
+    padding: 10px;
+    .time{
+        .year{
+            font-size: large;
+        }
+        .hour{
+            font-size: small;
+            padding: 0 15px;
+        }
+        .week{
+            font-size: small;
+        }
+    }
+    .location{
+        display: flex;
+        font-size: small;
+        padding: 10px 0;
+        border-bottom:1px solid #eee;
+    }
+    .tex{
+        padding-top: 17px; 
+    }
+}
+.skip{
+    position: fixed;
+    width: 100%;
+    padding: 0px 26%;
+    box-sizing: border-box;
+    bottom: 0.3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .icon-item{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 0.4rem;
+        height: 0.4rem;
+        background: rgb(46, 230, 159);
+        border-radius: 1rem;
+        color: #fff;
+    }
+}
